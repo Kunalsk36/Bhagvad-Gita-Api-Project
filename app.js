@@ -44,7 +44,6 @@ const getAllChapters = async () => {
 
       container.appendChild(infoDiv);
     });
-    console.log(result);
   } catch (error) {
     console.error(error);
   }
