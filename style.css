@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: #fff7e5;
+}
+
+.mainContainer {
+  width: 100vw;
+  margin-bottom: 20px;
+}
+
+.sliderContainer {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+.sliderContainer img {
+  width: 780px;
+}
+
+.read-now {
+  width: 100%;
+  text-align: center;
+  height: 80px;
+  background-color: #ffffff;
+}
+
+.read-now p a {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff5400;
+  line-height: 80px;
+  text-decoration: none;
+}
+
+.chapters p {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 50px;
+  color: #78290f;
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.info {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 35px;
+  width: 400px;
+  margin: 10px;
+}
+
+#chapterNo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6f1d1b;
+}
+
+#chapterName {
+  font-size: 22px;
+  font-style: italic;
+  color: #6f1d1b;
+  margin: 10px 0;
+}
+
+#description {
+  margin: 15px 0;
+  text-align: justify;
+  color: #432818;
+  font-size: 20px;
+}
+
+#totalVerses {
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #432818;
+}
+
+@media (max-width: 900px) {
+  .sliderContainer img {
+    width: 580px;
+  }
+
+  .read-now {
+    height: 70px;
+  }
+
+  .read-now p a {
+    font-size: 30px;
+    line-height: 70px;
+  }
+
+  .chapters p {
+    font-size: 30px;
+    margin: 40px;
+  }
+}
+
+@media (max-width: 660px) {
+  .sliderContainer img {
+    width: 400px;
+  }
+
+  .read-now {
+    height: 65px;
+  }
+
+  .read-now p a {
+    font-size: 26px;
+    line-height: 65px;
+  }
+
+  .chapters p {
+    font-size: 26px;
+    margin: 30px;
+  }
+}
+
+@media (max-width: 411px) {
+  .sliderContainer img {
+    width: 300px;
+  }
+}
