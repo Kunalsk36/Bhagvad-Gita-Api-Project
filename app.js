@@ -46,7 +46,6 @@ const getAllChapters = async () => {
 
       infoDiv.addEventListener("click", () => handleClick(chapter_number));
     });
-    console.log(result);
   } catch (error) {
     console.error(error);
   }
