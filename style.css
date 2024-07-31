@@ -59,6 +59,13 @@ body {
   padding: 35px;
   width: 400px;
   margin: 10px;
+  cursor: pointer;
+}
+
+.info:hover{
+  border: 1px solid #78290f;
+  background-color: rgb(253, 243, 207);
+  
 }
 
 #chapterNo {

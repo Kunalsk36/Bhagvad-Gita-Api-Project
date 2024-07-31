@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.mainContainer {
+    position: relative;
+    padding: 20px;
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.mainContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('background.png') repeat;
+    background-size: 300px;
+    opacity: 0.1;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+
+.arrow {
+    background-color: #d0c5bf;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.arrow img {
+    width: 60px;
+    position: relative;
+}
+
+#previousBtn {
+    right: 3px;
+}
+
+#nextBtn {
+    left: 4px;
+}
+
+.arrow:hover {
+    /* background-color: #b6aca7; click color */
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.arrow.active {
+    background-color: #b6aca7;
+}
+
+.info{
+    width: 60%;
+    max-height: 80vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 20px;
+    margin-top: 20px; 
+    box-sizing: border-box; 
+    scrollbar-width: thin;
+    scrollbar-color: #6f1d1b #f1f1f1;
+}
+
+.info::-webkit-scrollbar {
+    width: 1px;
+}
+
+#chapterNo{
+    font-size: 40px;
+  margin-bottom: 15px;
+  color: #ff5400;
+}
+
+#chapterName{
+    font-size: 50px;
+  margin-bottom: 25px;
+  color: #78290f;
+}
+
+#description{
+    font-size: 24px;
+    color: #6f1d1b;
+}
+
+@media (max-width: 650px) {
+    .arrow {
+        margin: 0 5px;
+    }
+
+    .arrow img {
+        width: 30px;
+    }
+    #nextBtn {
+        left: 2px;
+      }
+
+      #previousBtn {
+        right: 1px;
+      }
+
+      #chapterName {
+        font-size: 35px;
+      }
+
+      #chapterNo {
+        font-size: 30px;
+      }
+
+      #description {
+        font-size: 18px;
+      }
+  }

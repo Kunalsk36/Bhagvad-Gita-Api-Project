@@ -43,11 +43,17 @@ const getAllChapters = async () => {
       infoDiv.appendChild(versesCount);
 
       container.appendChild(infoDiv);
+
+      infoDiv.addEventListener("click", () => handleClick(chapter_number));
     });
     console.log(result);
   } catch (error) {
     console.error(error);
   }
+};
+
+const handleClick = (chapter_number) => {
+  window.location.href = `chapter.html?chapter_number=${chapter_number}`;
 };
 
 getAllChapters();
