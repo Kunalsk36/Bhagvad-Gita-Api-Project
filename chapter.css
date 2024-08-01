@@ -143,13 +143,14 @@ html {
 }
 
 .verseNumber {
-  width: 350px;
+  width: 25%;
   color: #78290f;
   font-weight: bold;
   margin: 0 30px;
 }
 
 .verseText {
+  width: 75%;
   color: #6f1d1b;
 }
 
