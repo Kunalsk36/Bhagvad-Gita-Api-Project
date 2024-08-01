@@ -195,6 +195,10 @@ html {
     font-size: 18px;
   }
 
+  .verseContainer h2 {
+    font-size: 30px;
+  }
+
   .verse .verseNumber {
     width: 40px;
     margin: 0 20px;
