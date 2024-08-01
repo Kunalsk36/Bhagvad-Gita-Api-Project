@@ -142,14 +142,14 @@ html {
   padding-bottom: 25px;
 }
 
-.verse .verseNumber {
+.verseNumber {
   width: 350px;
   color: #78290f;
   font-weight: bold;
   margin: 0 30px;
 }
 
-.verse .verseText {
+.verseText {
   color: #6f1d1b;
 }
 
