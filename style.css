@@ -46,6 +46,14 @@ body {
   text-decoration: underline;
 }
 
+#loading {
+  text-align: center;
+  font-size: 24px;
+  color: #6f1d1b;
+  margin: 60px;
+  display: none;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -62,10 +70,9 @@ body {
   cursor: pointer;
 }
 
-.info:hover{
+.info:hover {
   border: 1px solid #78290f;
   background-color: rgb(253, 243, 207);
-  
 }
 
 #chapterNo {
