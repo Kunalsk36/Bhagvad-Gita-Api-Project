@@ -128,7 +128,7 @@ const updateVerses = async (chapterNum) => {
       verseNoEl.textContent = `Verse ${verse_number}`;
 
       const verseTextEl = document.createElement("p");
-      verseTextEl.setAttribute("class", "verseNumber");
+      verseTextEl.setAttribute("class", "verseText");
       verseTextEl.textContent = transliteration;
 
       // Append elements to the verse div
