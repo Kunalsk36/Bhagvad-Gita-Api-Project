@@ -142,6 +142,10 @@ html {
   padding-bottom: 25px;
 }
 
+.verse:hover{
+  cursor: pointer;
+}
+
 .verseNumber {
   width: 25%;
   color: #78290f;
