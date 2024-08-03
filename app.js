@@ -18,8 +18,7 @@ const getAllChapters = async () => {
     const container = document.querySelector(".container");
     hideLoading();
     result.forEach((info) => {
-      const { chapter_number, name_translated, chapter_summary, verses_count } =
-        info;
+      const { chapter_number, name_translated, chapter_summary, verses_count } = info;
 
       const infoDiv = document.createElement("div");
       infoDiv.className = "info";

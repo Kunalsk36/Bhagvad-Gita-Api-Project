@@ -1,0 +1,36 @@
+.info {
+  justify-content: center;
+}
+
+#slug {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #ff5400;
+}
+
+#versetransliteration {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #78290f;
+}
+
+#translation {
+  font-size: 24px;
+  color: #6f1d1b;
+}
+
+@media (max-width: 650px) {
+  #versetransliteration {
+    font-size: 30px;
+  }
+
+  #slug {
+    font-size: 30px;
+  }
+
+  #translation {
+    font-size: 18px;
+    text-align: justify;
+  }
+}

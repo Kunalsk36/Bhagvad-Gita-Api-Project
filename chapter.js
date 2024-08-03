@@ -34,12 +34,22 @@ const init = () => {
 
 init();
 
+const showLoading = () => {
+  loadingElement.style.display = "block";
+};
+
+const hideLoading = () => {
+  loadingElement.style.display = "none";
+};
+
 let chapters = [];
 
 const getAllChapters = async () => {
   try {
+    showLoading();
     const response = await fetch(url, options);
     const result = await response.json();
+    hideLoading();
     chapters = result;
     updateChapterContent(chapters[currentIndex]);
     getAllData(currentIndex + 1); // Pass currentIndex + 1 to getAllData
@@ -137,6 +147,10 @@ const updateVerses = async (chapterNum) => {
 
       // Append verse div to the container
       versesContainer.appendChild(verseDiv);
+
+      verseDiv.addEventListener("click", () =>
+        handleClick(chapterNum, verse_number)
+      );
     });
   } catch (error) {
     console.error(error);
@@ -146,12 +160,8 @@ const updateVerses = async (chapterNum) => {
   }
 };
 
-const showLoading = () => {
-  loadingElement.style.display = "block";
-};
-
-const hideLoading = () => {
-  loadingElement.style.display = "none";
+const handleClick = (chapter_number, verse_number) => {
+  window.location.href = `verse.html?chapter_number=${chapter_number}&verse_number=${verse_number}`;
 };
 
 async function getAllData(c) {
